@@ -14,6 +14,8 @@ ARCANA_OFFICIAL := true
 ARCANA_MAINTAINER := NEXUS
 WITH_GAPPS := true
 
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_beryllium
 PRODUCT_DEVICE := beryllium

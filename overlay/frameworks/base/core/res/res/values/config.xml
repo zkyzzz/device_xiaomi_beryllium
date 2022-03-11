@@ -687,7 +687,7 @@
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M -270,0 L -270,86 L 270,86 L 270,0 Z</string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">86.0px</dimen>
+    <dimen name="status_bar_height">86.0px</dimen>
     <dimen name="status_bar_height_landscape">86.0px</dimen>
     <dimen name="rounded_corner_radius">40dp</dimen>
 

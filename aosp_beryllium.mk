@@ -11,9 +11,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 ARCANA_DEVICE := beryllium
 ARCANA_OFFICIAL := true
-ARCANA_MAINTAINER := NEXUS
-WITH_GAPPS := true
-
+ARCANA_MAINTAINER := 𝕏𝕀𝕊𝔸ℕ
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.

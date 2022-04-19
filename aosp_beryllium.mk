@@ -12,7 +12,12 @@ TARGET_BOOT_ANIMATION_RES := 1080
 ARCANA_DEVICE := beryllium
 ARCANA_OFFICIAL := true
 ARCANA_MAINTAINER := 𝕏𝕀𝕊𝔸ℕ
+
+# Quick-Tap
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Next Gen Assistant
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_beryllium
@@ -21,10 +26,12 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := "Xiaomi/beryllium/beryllium:10/QKQ1.190828.002/V12.0.3.0.QEJMIXM:user/release-keys"
+PRODUCT_SYSTEM_NAME := beryllium
+
+BUILD_FINGERPRINT := "google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="beryllium-user 10 QKQ1.190828.002 V12.0.3.0.QEJMIXM release-keys" \
-    PRODUCT_NAME="beryllium"
+    PRIVATE_BUILD_DESC="raven-user 12 SP2A.220405.004 8233519 release-keys" \
+    TARGET_PRODUCT="beryllium"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

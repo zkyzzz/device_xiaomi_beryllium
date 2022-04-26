@@ -6,12 +6,10 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Arcana stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-ARCANA_DEVICE := beryllium
-ARCANA_OFFICIAL := true
-ARCANA_MAINTAINER := 𝕏𝕀𝕊𝔸ℕ
+CHERISH_VANILLA := true
 
 # Quick-Tap
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -20,18 +18,20 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_beryllium
+PRODUCT_NAME := cherish_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_SYSTEM_NAME := beryllium
-
-BUILD_FINGERPRINT := "google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys"
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="raven-user 12 SP2A.220405.004 8233519 release-keys" \
+    PRIVATE_BUILD_DESC="dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys"
     TARGET_PRODUCT="beryllium"
+
+BUILD_FINGERPRINT := Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys
+
+#Maintainer Flag
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=𝕏𝕀𝕊𝔸ℕ
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

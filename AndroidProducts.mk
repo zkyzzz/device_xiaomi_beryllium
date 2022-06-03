@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/krypton_beryllium.mk
+    $(LOCAL_DIR)/komodo_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    krypton_beryllium-user \
-    krypton_beryllium-userdebug \
-    krypton_beryllium-eng
+    komodo_beryllium-user \
+    komodo_beryllium-userdebug \
+    komodo_beryllium-eng

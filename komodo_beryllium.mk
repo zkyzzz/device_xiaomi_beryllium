@@ -6,12 +6,12 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Krypton stuff.
-$(call inherit-product, vendor/krypton/config/common_full_phone.mk)
+# Inherit some common Komodo stuff.
+$(call inherit-product, vendor/komodo/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := krypton_beryllium
+PRODUCT_NAME := komodo_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1

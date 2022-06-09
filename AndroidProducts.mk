@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_beryllium.mk
+    $(LOCAL_DIR)/yaap_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_beryllium-user \
-    lineage_beryllium-userdebug \
-    lineage_beryllium-eng
+    yaap_beryllium-user \
+    yaap_beryllium-userdebug \
+    yaap_beryllium-eng

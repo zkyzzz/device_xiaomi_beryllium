@@ -1,0 +1,28 @@
+[
+   {
+   "remote"       : "github",
+   "repository"   : "zkyzzz/device_xiaomi_sdm845-common",
+   "target_path"  : "device/xiaomi/sdm845-common",
+   "branch"       : "12.1"
+   },
+   {
+   "remote"       : "github",
+   "repository"   : "zkyzzz/vendor_xiaomi",
+   "target_path"  : "vendor/xiaomi",
+   "branch"       : "12.1"
+   },
+   {
+   "remote"       : "github",
+   "repository"   : "PainKiller3/kernel_xiaomi_sdm845",
+   "target_path"  : "kernel/xiaomi/sdm845",
+   "branch"       : "twelve",
+   "clone-depth"  : "1"
+   },
+   {
+   "remote"       : "github",
+   "repository"   : "kdrag0n/proton-clang",
+   "target_path"  : "prebuilts/clang/host/linux-x86/clang-proton",
+   "branch"       : "master",
+   "clone-depth"  : "1"
+   }
+]

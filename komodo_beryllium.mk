@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/beryllium/device.mk)
 $(call inherit-product, vendor/komodo/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
+KOMODO_GAPPS_TYPE := gapps
+KOMODO_OFFICIAL := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := komodo_beryllium
 PRODUCT_DEVICE := beryllium

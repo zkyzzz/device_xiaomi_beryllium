@@ -6,21 +6,16 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Arcana stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common Nusantara stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-ARCANA_DEVICE := beryllium
-ARCANA_OFFICIAL := true
-ARCANA_MAINTAINER := 𝕏𝕀𝕊𝔸ℕ
 
-# Quick-Tap
-TARGET_SUPPORTS_QUICK_TAP := true
-
-# Next Gen Assistant
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+NAD_BUILD_TYPE := OFFICIAL
+USE_GAPPS := true
+USE_AOSP_CLOCK := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_beryllium
+PRODUCT_NAME := nad_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
